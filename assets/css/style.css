@@ -190,7 +190,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #008E8E;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background:url(../images/about/welcome-banner2.jpg)no-repeat;
     background-size:cover;
     background-position: center;
     height:890px;
@@ -200,7 +200,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #008E8E;}
     content: " ";
     top:0;
     left:0;
-    background:rgba(31,44,108,.65);
+    background:rgba(8, 11, 28, 0.65);
     width:100%;
     height:100%;
 }
@@ -359,11 +359,13 @@ span.single-timeline-horizontal {
     display:  inline-block;
     background: #b2c1ce;
     height:  1px;
-    width: 380px;
+    width: 500px;
 }
 span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.timeline-horizontal-border*/
-
+.single-horizontal-timeline .timeline-content p {
+    max-width: 100%;
+}
 /*.education-horizontal-timeline*/
 
 /*-------------------------------------
@@ -372,8 +374,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .skills {
     
 }
-.skill-content{padding: 50px 0 80px;}
-.single-skill-content{padding-top: 100px;}
+.skill-content{padding: 20px 0 20px;}
+.single-skill-content{padding-top: 50px;}
 .section-heading h2 {
     font-size: 24px;
     font-weight: 600;
@@ -381,67 +383,58 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding-bottom: 50px;
     border-bottom: 1px solid #e5ebf2;
 }
-.single-progress-txt {
-    display: flex;
+/*-------------------------------------
+        7.  Skills Category
+--------------------------------------*/
+
+.skill-category {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
-.single-progress-txt h3 {
-    width: 10%;
-    color: #008E8E;
-    position: relative;
-    top: 6px;
-    left: 20px;
+.row {
+    margin-bottom:1px; /* Adjust margin-bottom for each row */
 }
-.barWrapper {
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-.progress {
-    border-radius:3px;
-    overflow: visible;
-    background: #e6ecf3;
-    height:8px;
-    margin-top: 15px;
-    width: 85%;
-    margin-bottom: 37px;
-}
-.progress-bar {
-   background: #008E8E;
-    border-radius: 3px;
-   -webkit-transition: width 1.5s ease-in-out;
-   -ms-transition: width 1.5s ease-in-out;
-   -moz-transition: width 1.5s ease-in-out;
-   -o-transition: width 1.5s ease-in-out;
-   transition: width 1.5s ease-in-out;
-}
-.tooltip{
-   position:relative;
-   float:right;
-}
-.tooltip > .tooltip-inner {
-   background-color: transparent;
-   padding: 1px 5px;
-   color: #008E8E;
-   font-weight: 500;
-   font-size: 12px;
-   border-radius: 0;
-}
-.popOver + .tooltip > .tooltip-arrow {
-   border-left: 6px solid transparent;
-   border-right: 6px solid transparent;
-   border-top: 6px solid #fff;
-   bottom: -1px;
-   transform: translateX(-50%);
-   margin-left: 0;
+.skill-category .logo-list li {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center content */
+    margin-bottom: 10px; /* Add margin between each skill item */
 }
 
+.skill-category .logo-list li img {
+    margin-right: 10px; /* Add margin between the logo and text */
+}
+.skill-category h3 {
+    margin-bottom: 15px; /* Add margin bottom for the heading */
+}
+
+.skill-category ul {
+    margin-top: 15px; /* Add margin top for the list */
+}
+
+.skill-category li {
+    margin-bottom: 8px; /* Add margin bottom for each list item */
+}
+.programming-languages,
+.libraries,
+.software-tools,
+.soft-skills {
+    background-color: #f0f0f0;
+}
 /*-------------------------------------
         7. Experience
 -------------------------------------*/
+.description ul {
+    list-style-type: disc; /* Use a filled circle as the bullet point */
+}
+
 .experience {
     padding: 50px 0 100px;
     border-top: 1px solid #e5ebf2;
 }
+
 .experience-content {padding-top: 100px;}
 .single-timeline-box {margin-bottom: 75px;}
 
